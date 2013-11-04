@@ -1,0 +1,223 @@
+.fixAll {
+    *zoom: 1;
+}
+
+.fixAll:before, .fixAll:after {
+    content: "";
+    clear: both;
+    display: block;
+    line-height: 0;
+}
+
+
+body {
+    margin: 0;
+    background-color: #000000;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: neonFont;
+    src: url(../fonts/ArialRoundedBold.ttf);
+}
+
+#container-wrapper {
+    width: 180%;
+    height: 120%;
+    left: -100px;
+    top: -50px;
+    background: url("../images/brickBG.jpg");
+    overflow-x: hidden;
+}
+
+#startScreen {
+    width: 550px;
+    height: 400px;
+
+}
+
+#title {
+    top: 100px;
+}
+
+#title h1 {
+    text-align: center;
+    width: 500px;
+    font-size: 300%;
+    margin: 0 auto;
+    font-family: neonFont;
+    font-weight: bold;
+}
+
+#startGameBtn{
+    position: relative;
+    top: 50px;
+    left: 175px;
+    width: 200px;
+    height: 100px;
+    border: none;
+    background-color: #29ff05;
+    font-size: 150%;
+    cursor: pointer;
+    background: url("../images/btnBG.png");
+}
+
+#gameBoard {
+    width: 550px;
+    height: 400px;
+    overflow: hidden;
+    background: #000000;
+    border: solid #000000 10px;
+}
+
+.abs {
+    position: absolute;
+}
+
+#floor {
+    bottom: 0px;
+    visibility: hidden;
+    background-color: #000000;
+}
+
+#wall #wallHalf #wallBlack{
+    top: -5px;
+}
+
+#floorCrack {
+    top: 193px;
+    left: 300px;
+    visibility: hidden;
+}
+
+#wallCrack {
+    top: 5px;
+    left: 15px;
+    visibility: hidden;
+}
+
+#spiderWeb {
+    top: -15px;
+    right: -15px;
+    visibility: hidden;
+}
+
+#ladder {
+    top: 80px;
+    left: 150px;
+    visibility: hidden;
+}
+
+#leftLightHolder {
+    left: 140px;
+    visibility: hidden;
+}
+
+#rightLightHolder {
+    top: -20px;
+    right: 140px;
+    visibility: hidden;
+}
+
+#lightPole {
+    width: 5px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #343434;
+}
+
+#barrels {
+    right: -150px;
+    width: 300px;
+    bottom: 150px;
+
+}
+
+#barrels img{
+    position: relative;
+    left: 250px;
+}
+
+#tires {
+    height: 350px;
+    top: -100px;
+    left: 50px;
+}
+
+#tires img{
+    position: relative;
+}
+
+#cardBoardBoxes {
+    width: 200px;
+    top: 200px;
+    left: -100px;
+}
+
+#cardBoardBoxes img{
+    position: relative;
+}
+
+#smallBoxes {
+    top: 250px;
+    left: -80px;
+    height: 300px;
+    /*visibility: hidden;*/
+}
+
+#smallBoxes img{
+    position: relative;
+    top: 150px;
+}
+
+#largeBoxes {
+    top: 250px;
+    left: 190px;
+    height: 500px;
+    /*visibility: hidden;*/
+}
+
+#largeBoxes img{
+    position: relative;
+    top: 150px;
+}
+
+#target {
+    top: 150px;
+    width: 100%;
+}
+
+#target img{
+    position: relative;
+    visibility: hidden;
+}
+
+#score {
+    top: 5px;
+    left: 5px;
+    color: #FFFFFF;
+}
+
+#timer {
+    top: 5px;
+    right: 5px;
+    color: #FFFFFF;
+}
+
+#gameOverModal {
+    width: 100%;
+    height: 100%;
+    background-color: #888;
+    line-height: 250px;
+    text-align: center;
+    font-size: 400%;
+    font-weight: bold;
+    opacity: 0;
+    display: none;
+}
+
+#gameOverModal {
+    width: 100%;
+    height: 100%;
+}

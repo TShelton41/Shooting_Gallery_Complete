@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="Todd Shelton">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<div id="container-wrapper" class="abs">
+<div id="startScreen" class="abs">
+    <div id="title">
+        <h1>SHOOTING GALLERY</h1>
+    </div>
+    <button id="startGameBtn"></button>
+</div>
+
+<div id="gameBoard" class="abs">
+
+    <div id="floor" class="abs"><img src="images/floor.jpg"></div>
+    <div id="wall" class="abs"><img src="images/backWall.png"></div>
+    <div id="wallHalf" class="abs"><img src="images/halfLiteBackWall.png"></div>
+    <div id="wallBlack" class="abs"><img src="images/blackBackWall.png"></div>
+    <div id="floorCrack" class="abs"><img src="images/floorCrack.png"></div>
+    <div id="wallCrack" class="abs"><img src="images/crack.png"></div>
+    <div id="spiderWeb" class="abs"><img src="images/cobweb.png"></div>
+    <div id="ladder" class="abs"><img src="images/ladder.png"></div>
+    <div id="leftLightHolder" class="abs">
+        <div id="lightPole"></div>
+        <img src="images/light.png">
+    </div>
+    <div id="rightLightHolder" class="abs">
+        <div id="lightPole"></div>
+        <img src="images/light.png">
+    </div>
+    
+    <div id="barrels" class="abs">
+        <img src="images/barrel.png">
+        <img src="images/barrel.png">
+        <img src="images/barrel.png">
+        <img src="images/barrel.png">
+        <img src="images/barrel.png">
+    </div>
+
+    <div id="tires" class="abs">
+        <img src="images/tires.png">
+    </div>
+
+    <div id="cardBoardBoxes" class="abs">
+        <img src="images/cardboardBoxed.png">
+    </div>
+
+    <div id="target" class="abs">
+        <img src="images/target.png">
+    </div>
+
+    <div id="smallBoxes" class="abs">
+        <img src="images/smallBoxesBlur.png">
+    </div>
+
+    <div id="largeBoxes" class="abs">
+        <img src="images/boxesBlur.png">
+    </div>
+
+    <div id="score" class="abs">
+        <span>Score:</span>
+        <span id="playerScore">0</span>
+    </div>
+
+    <div id="timer" class="abs">
+        <span>Time:</span>
+        <span id="time">0</span>
+    </div>
+    <div id="gameOverModal" class="abs">
+        <p id="gameOverText"></p>
+    </div>
+
+    <div id="windowPane" class="abs">
+        <img src="images/windowPane.png">
+    </div>
+
+
+</div>
+</div>
+
+<script src="vendor/jquery-1.10.2.min.js"></script>
+<script src="vendor/jquery.gsap.min.js"></script>
+<script src="vendor/TimelineMax.min.js"></script>
+<script src="vendor/TweenMax.min.js"></script>
+<script src="vendor/easing/EasePack.min.js"></script>
+<script src="vendor/plugins/CSSPlugin.min.js"></script>
+<script src="vendor/plugins/AttrPlugin.min.js"></script>
+<script src="vendor/plugins/ScrambleTextPlugin.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
