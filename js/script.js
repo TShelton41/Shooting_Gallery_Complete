@@ -91,8 +91,6 @@ function assembleStage(){
     tl.add(TweenMax.to($('#smallBoxes img'),.5, {css:{top: "0"}, ease: Quad.easeOut}));
     tl.add(TweenMax.to($('#largeBoxes img'),.5, {css:{top: "0"}, ease: Quad.easeOut}));
     tl.add(TweenMax.to($('#target img'),3, {rotationX: 0, visibility: "visible", ease: Quad.easeOut, onComplete:startGameTime}));
-    //tl.addCallback(removePane, 4);
-
 }
 
 function removePane(){
